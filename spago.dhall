@@ -5,12 +5,7 @@ You can edit this file as you like.
 { name =
     "Resourcery"
 , dependencies =
-    [ "effect"
-    , "console"
-    , "psci-support"
-    , "affjax"
-    , "payload"
-    ]
+    [ "affjax", "console", "effect", "maybe", "payload", "psci-support" ]
 , packages =
     ./packages.dhall
 , sources =

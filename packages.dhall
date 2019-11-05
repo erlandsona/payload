@@ -123,49 +123,48 @@ let upstream =
 let overrides = {=}
 
 let additions =
-  { affjax =
-    { dependencies =
-      [ "aff"
-      , "argonaut-core"
-      , "arraybuffer-types"
-      , "web-xhr"
-      , "foreign"
-      , "form-urlencoded"
-      , "http-methods"
-      , "integers"
-      , "math"
-      , "media-types"
-      , "nullable"
-      , "refs"
-      , "unsafe-coerce"
-      ]
-      , repo =
-          "https://github.com/slamdata/purescript-affjax.git"
-      , version =
-          "v9.0.0"
-    }
-  , payload =
-      { dependencies =
-        [ "aff"
-        , "console"
-        , "node-http"
-        , "foreign-generic"
-        , "typelevel-prelude"
-        , "record"
-        , "debug"
-        , "node-fs"
-        , "node-fs-aff"
-        , "affjax"
-        , "prelude"
-        , "simple-json"
-        , "stringutils"
-        ]
-      , repo =
-          "https://github.com/hoodunit/purescript-payload.git"
-      , version =
-          "v0.1.4"
+      { affjax =
+          { dependencies =
+              [ "aff"
+              , "argonaut-core"
+              , "arraybuffer-types"
+              , "web-xhr"
+              , "foreign"
+              , "form-urlencoded"
+              , "http-methods"
+              , "integers"
+              , "math"
+              , "media-types"
+              , "nullable"
+              , "refs"
+              , "unsafe-coerce"
+              ]
+          , repo =
+              "https://github.com/slamdata/purescript-affjax.git"
+          , version =
+              "v9.0.0"
+          }
+      , payload =
+          { dependencies =
+              [ "aff"
+              , "console"
+              , "node-http"
+              , "foreign-generic"
+              , "typelevel-prelude"
+              , "record"
+              , "debug"
+              , "node-fs"
+              , "node-fs-aff"
+              , "affjax"
+              , "prelude"
+              , "simple-json"
+              , "stringutils"
+              ]
+          , repo =
+              "https://github.com/hoodunit/purescript-payload.git"
+          , version =
+              "v0.1.4"
+          }
       }
-  }
-
 
 in  upstream // overrides // additions
